@@ -15,18 +15,18 @@ GIVEN a social network API
 
 <ul>
 <li>WHEN I enter the command to invoke the application</li>
-<li>THEN I am presented with current and future conditions for that city and that city is added to the search history</li>
-<li>WHEN I view current weather conditions for that city</li>
-<li>THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, and the humidity, the wind speed, and the UV index</li>
-<li>WHEN I view the UV index</li>
-<li>THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe</li>
-<li>WHEN I view future weather conditions for that city</li>
-<li>THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions the temperature the wind speed, and the humidity</li>
-<li>WHEN I click on a city in the search history</li>
-<li>THEN I am again presented with current and future conditions for that city</li>
+<li>THEN my server is started and the Mongoose models are synced to the MongoDB database</li>
+<li>WHEN I open API GET routes in Insomnia for users and thoughts</li>
+<li>THEN the data for each of these routes is displayed in a formatted JSON</li>
+<li>WHEN I test API POST, PUT, and DELETE routes in Insomnia</li>
+<li>THEN I am able to successfully create, update, and delete users and thoughts in my database</li>
+<li>WHEN I test API POST and DELETE routes in Insomnia</li>
+<li>THEN I am able to successfully create and delete reactions to thoughts and add and remove friends to a user's friend list</li>
 </ul>
 
 [Video Tutorial](https://placeholder)
 
 Contribution guidelines for this project
 <img src="./assets/images/" alt="screenshot" />
+
+<video src="./assets/video/hw-capture.mp4" alt="video of challenge guidelines">
