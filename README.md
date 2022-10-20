@@ -1,4 +1,4 @@
-# Dear Diary
+# Social Network
 
 ## User Story
 
@@ -27,6 +27,4 @@ GIVEN a social network API
 [Video Tutorial](https://placeholder)
 
 Contribution guidelines for this project
-<img src="./assets/images/" alt="screenshot" />
-
-<video src="./assets/video/hw-capture.mp4" alt="video of challenge guidelines">
+<img src="./assets/images/insomnia-capture.png" alt="screenshot" />
