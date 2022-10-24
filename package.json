@@ -1,6 +1,29 @@
 {
+  "name": "social-network",
+  "version": "1.0.0",
+  "description": "## User Story",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/levimendyk/dear-diary.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/levimendyk/dear-diary/issues"
+  },
+  "homepage": "https://github.com/levimendyk/dear-diary#readme",
   "dependencies": {
     "express": "^4.18.2",
-    "mongoose": "^6.6.5"
+    "mongoose": "^6.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }

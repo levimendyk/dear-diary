@@ -1,30 +1,20 @@
 const express = require("express");
-const mongodb = require("mongodb").MongoClient;
-
+const db = require("./config/connection.js");
+const routes = require("./routes");
 const app = express();
 const port = 3001;
 
-// Connects to the database  LEVI-Need to add the databasename inside this URI
-const connectionStringURI = `mongodb://127.0.0.1:27017/numbersDB`;
-
-let db;
+app.use(
+  express.urlencoded({
+    extended: true,
+  })
+);
+app.use(express.json());
+app.use(routes);
 
 // Starting the Mongo connection LEVI-NEED TO ADJUST THE DB ETC.
-mongodb.connect(
-  connectionStringURI,
-  { useNewUrlParser: true, useUnifiedTopology: true },
-  (err, client) => {
-    db = client.db();
-    db.collection("numberList").deleteMany({});
-    db.collection("numberList").insertMany(data, (err, res) => {
-      if (err) {
-        return console.log(err);
-      }
-      console.log("Data inserted");
-    });
-
-    app.listen(port, () => {
-      console.log(`Example app listening at http://localhost:${port}`);
-    });
-  }
-);
+db.once("open", () => {
+  app.listen(port, () => {
+    console.log(`Example app listening at http://localhost:${port}`);
+  });
+});
