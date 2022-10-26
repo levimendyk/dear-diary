@@ -12,7 +12,7 @@ app.use(
 app.use(express.json());
 app.use(routes);
 
-// Starting the Mongo connection LEVI-NEED TO ADJUST THE DB ETC.
+// Starting the Mongo connection once db open port
 db.once("open", () => {
   app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`);
