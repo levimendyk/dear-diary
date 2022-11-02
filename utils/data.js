@@ -15,4 +15,4 @@ const thoughts = [{
 
 const users = [];
 
-module.exports = {} // LEVI-Not sure yet
+module.exports = { userinfo, thoughts } // LEVI-Not sure yet
