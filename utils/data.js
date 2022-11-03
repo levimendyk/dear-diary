@@ -1,14 +1,14 @@
 // LEVI-STARTING DATA CODE
 const userinfo = [{
     username;
-    emailer;
-    thoughts;
+    email;
+    thought;
     friends;
 }];
 
 const thoughts = [{
     thoughtText;
-    createAtt;
+    createAt;
     username;
     reactions;
 }];

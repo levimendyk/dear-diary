@@ -1,5 +1,12 @@
-const { Thought, User } = require('../models');
+const { Thought, User } = require("../models");
 
-module.exports = {
-    
-}
+// Gets all thoughts Controllers
+const thoughtController = {
+  getAllThoughts(req, res) {
+    Thought.find().then((data) => res.json(data));
+  },
+};
+
+// 
+
+module.exports = thoughtController;
