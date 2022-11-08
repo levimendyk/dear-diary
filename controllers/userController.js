@@ -27,10 +27,25 @@ const userController = {
   deleteUser(req, res) {
     User.findByIdAndDelete(req.params.id).then((data) => {
       if (!data) {
-       return res.status(404).json({ message: "No user with this ID" });
+        return res.status(404).json({ message: "No user with this ID" });
       }
       res.json({ message: "User Deleted", deletedUser: data });
     });
+  },
+  // /api/users/:userId/friends/:friendId
+  addFriend(req, res) {
+    User.findByIdAndUpdate(req.params.userId, {
+      $addToSet: { friends: req.params.friendId },
+    }, {new: true})
+      .then((data) => res.json(data))
+      .catch((err) => res.status(500).json(err));
+  },
+  deleteFriend(req, res) {
+    User.findByIdAndUpdate(req.params.userId, {
+      $pull: { friends: req.params.friendId },
+    }, {new: true})
+      .then((data) => res.json(data))
+      .catch((err) => res.status(500).json(err));
   },
 };
 
