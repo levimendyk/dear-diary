@@ -1,4 +1,3 @@
-// LEVI-STARTING DATA CODE
 const userinfo = [{
     username;
     email;
@@ -15,4 +14,4 @@ const thoughts = [{
 
 const users = [];
 
-module.exports = { userinfo, thoughts } // LEVI-Not sure yet
+module.exports = { userinfo, thoughts }

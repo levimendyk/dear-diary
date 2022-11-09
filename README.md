@@ -24,7 +24,7 @@ GIVEN a social network API
 <li>THEN I am able to successfully create and delete reactions to thoughts and add and remove friends to a user's friend list</li>
 </ul>
 
-[Video Tutorial](https://placeholder)
+[Video Tutorial](https://drive.google.com/file/d/1BdsxFYIC4PAqgC-h5M4ndpeDrrL123jS/view)
 
 Contribution guidelines for this project
 <img src="./assets/images/insomnia-capture.png" alt="screenshot" />
